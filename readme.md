@@ -25,4 +25,4 @@ This project utilizes a range of modern web development technologies:
 - **CSS3**: For styling and layout, including Flexbox and Grid.
 - **JavaScript**: For interactive elements and dynamic content.
 - **GSAP (GreenSock Animation Platform)**: For creating animations and transitions.
-- **Lenis**: For better scrolling AAnimations.
+- **Lenis**: For better scrolling animations.
