@@ -1,0 +1,238 @@
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 3vw 3vw;
+  }
+
+  .nav-deff {
+    gap: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-def {
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 1vw 3vw;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6vw 3vw;
+  }
+
+  .slice {
+    width: 50%;
+  }
+
+  #sidebar {
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--default-background);
+    padding: 0 1vw;
+  }
+
+  .sidebar-binding {
+    padding: 0 0 2vw 3vw;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vw;
+    flex-direction: column;
+  }
+
+  .sidebar-binding .sdbr-badge {
+    background-color: red;
+    width: fit-content;
+    display: none;
+  }
+
+  .sidebar-binding .sdbr-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sidebar-binding .sdbr-top a {
+    width: fit-content;
+    font-size: 6vw;
+    font-weight: 300;
+    color: var(--secondary-color);
+  }
+
+  .sidebar-binding .sdbr-bottom {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-binding .sdbr-bottom a {
+    font-size: 1.5vw;
+    color: var(--secondary-color);
+  }
+
+  .hero-info-frame{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-title{
+    font-weight: 300;
+    font-size: 9vw;
+    line-height: 1;
+  }
+  
+  .hero-mini{
+    margin-top: 3vw;
+    width: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-subtitle{
+    width: 69%;
+    font-weight: 300;
+    font-size: 2vw;
+  }
+  
+  .btn--cta{
+    padding: .7vw 2.5vw;
+    border-radius: 100px;
+    background-color: var(--default-background);
+    color: var(--btn-color);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    background-color: transparent;
+    z-index: 2;
+    height: 15vh;
+  }
+
+  .btn-def {
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 2vw 5vw;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5vw 5vw;
+  }
+
+  .slice {
+    width: 40%;
+  }
+
+  #sidebar {
+    overflow: hidden;
+    top: 15vh;
+    right: 100%;
+    height: calc(100vh - 15vh);
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--default-background);
+    padding: 0 1vw;
+  }
+
+  .sidebar-binding {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .sidebar-binding .sdbr-badge {
+    background-color: red;
+    width: fit-content;
+    display: none;
+  }
+
+  .sidebar-binding .sdbr-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sidebar-binding .sdbr-top a {
+    width: fit-content;
+    font-size: 10vw;
+    font-weight: 300;
+    color: var(--secondary-color);
+  }
+
+  .sidebar-binding .sdbr-bottom {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-binding .sdbr-bottom a {
+    font-size: 2.5vw;
+    color: var(--secondary-color);
+  }
+
+
+  .hero-info-frame{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-title{
+    font-weight: 300;
+    font-size: 13vw;
+    line-height: 1;
+  }
+  
+  .hero-mini{
+    margin-top: 3vw;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  
+  .hero-subtitle{
+    width: 69%;
+    font-weight: 300;
+    font-size: 3vw;
+  }
+  
+  .btn--cta{
+    padding: 1vw 4.5vw;
+    border-radius: 100px;
+    background-color: var(--default-background);
+    color: var(--btn-color);
+  }
+}
