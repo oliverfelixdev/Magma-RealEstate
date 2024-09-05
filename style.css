@@ -7,7 +7,7 @@
 
 :root {
   /* backgrounds */
-  --primary-background: #1340DB;
+  --primary-background: #1340db;
   --secondary-background: #02268e;
   --default-background: #ffffff;
   --rare-background: #0f0f17;
@@ -304,7 +304,7 @@ body {
   width: 100vw;
   position: relative;
   overflow-x: hidden;
-  background-color: #143BD3;
+  background-color: #143bd3;
 }
 
 .sec2-binding {
@@ -349,7 +349,7 @@ body {
   z-index: 1;
 }
 
-.canvas_3__overlay{
+.canvas_3__overlay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -359,15 +359,15 @@ body {
   z-index: 2;
 }
 
-#sec4{
+#sec4 {
   min-height: 30vh;
   width: 100vw;
   position: relative;
-  background: linear-gradient(#1139CD, #1036C6);
-  padding-top: .1px;
+  background: linear-gradient(#1139cd, #1036c6);
+  padding-top: 0.1px;
 }
 
-.sec4-binding{
+.sec4-binding {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -379,18 +379,18 @@ body {
   position: relative;
 }
 
-.sec4-binding h1{
+.sec4-binding h1 {
   width: 90%;
   color: var(--primary-color);
 }
 
-#sec5{
+#sec5 {
   height: 100vh;
   width: 100vw;
   position: relative;
 }
 
-#sec5 > canvas{
+#sec5 > canvas {
   max-height: 100vh;
   max-width: 100vw;
   position: relative;
@@ -400,3 +400,61 @@ body {
   display: none;
 }
 
+#sec6 {
+  min-height: 60vh;
+  width: 100vw;
+  position: relative;
+  background: linear-gradient(#0b2fc1, #093dcd);
+  padding: 0.1px;
+}
+
+.sec6-binding {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 2vw;
+  margin: 8vw 0 0 7vw;
+  position: relative;
+}
+
+.sec6-binding h1 {
+  width: 90%;
+}
+
+#sec7 {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#index-circle {
+  height: 30vw;
+  width: 30vw;
+  position: absolute;
+  border: 1.5px solid var(--border-background);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#index-circle-inner {
+  height: 17vw;
+  width: 17vw;
+  border: 1.5px solid var(--default-background);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#sec7 > canvas {
+  max-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+}
