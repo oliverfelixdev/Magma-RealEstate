@@ -7,7 +7,7 @@
 
 :root {
   /* backgrounds */
-  --primary-background: #1437D0;
+  --primary-background: #1340DB;
   --secondary-background: #02268e;
   --default-background: #ffffff;
   --rare-background: #0f0f17;
@@ -304,6 +304,7 @@ body {
   width: 100vw;
   position: relative;
   overflow-x: hidden;
+  background-color: #143BD3;
 }
 
 .sec2-binding {
@@ -326,27 +327,76 @@ body {
   color: var(--primary-color);
 }
 
-.sec2-binding .text-container h1 {
-  color: var(--border-background);
+.minCan-title {
   font-size: 4.5vw;
   font-weight: 300;
   line-height: 5vw;
   letter-spacing: -2px;
+  color: var(--primary-color);
 }
 
 #sec3 {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+#sec3 > canvas {
+  max-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.canvas_3__overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #133edb2c;
+  z-index: 2;
+}
+
+#sec4{
+  min-height: 30vh;
+  width: 100vw;
+  position: relative;
+  background: linear-gradient(#1139CD, #1036C6);
+  padding-top: .1px;
+}
+
+.sec4-binding{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 2vw;
+  margin: 8vw 0 0 7vw;
+  position: relative;
+}
+
+.sec4-binding h1{
+  width: 90%;
+  color: var(--primary-color);
+}
+
+#sec5{
+  height: 100vh;
   width: 100vw;
   position: relative;
 }
 
-#sec3 > canvas {
-  min-height: 100vh;
-  min-width: 100vw;
+#sec5 > canvas{
+  max-height: 100vh;
+  max-width: 100vw;
   position: relative;
 }
-
 
 ::-webkit-scrollbar {
   display: none;
 }
+

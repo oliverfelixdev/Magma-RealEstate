@@ -134,8 +134,7 @@
     color: var(--primary-color);
   }
 
-  .sec2-binding .text-container h1 {
-    color: var(--border-background);
+  .minCan-title {
     font-size: 5.5vw;
     font-weight: 300;
     line-height: 6vw;
@@ -259,15 +258,13 @@
 
   #sec2 {
     min-height: 40vh;
-    background-color: red;
   }
 
   .subtitle--main {
     font-size: 2vw;
   }
 
-  .sec2-binding .text-container h1 {
-    color: var(--border-background);
+  .minCan-title {
     font-size: 6.5vw;
     font-weight: 300;
     line-height: 8vw;
@@ -275,6 +272,15 @@
   }
 
   .sec2-binding .text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw;
+    margin: 8vw 0 0 0vw;
+  }
+  .sec4-binding {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -369,6 +375,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
   }
 
   .hero-info-frame {
@@ -425,8 +432,7 @@
     font-size: 3vw;
   }
 
-  .sec2-binding .text-container h1 {
-    color: var(--border-background);
+  .minCan-title {
     font-size: 8.5vw;
     font-weight: 300;
     line-height: 10vw;
