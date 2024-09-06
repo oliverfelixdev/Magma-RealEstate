@@ -565,28 +565,35 @@ function canvasMagmaIndex() {
 }
 canvasMagmaIndex();
 
-let CircleMain = document.getElementById('index-circle')
-gsap.to(CircleMain, {
-  scrollTrigger: {
-    trigger: CircleMain,
-    start: "top top",
-    end: "bottom top",
-    markers: true,
-    scrub: .5,
-  },
-  scale: 3,
-  // backgroundColor: "#133edbd0"
-})
+let magmaIndexCircles = () => {
+  let CircleMain = document.getElementById("index-circle");
+  gsap.to(CircleMain, {
+    scrollTrigger: {
+      trigger: CircleMain,
+      start: "top 10%",
+      end: "bottom top",
+      scrub: 2,
+    },
+    scale: 3,
+    // backgroundColor: "#133edbd0"
+  });
 
-let CircleInner = document.getElementById('index-circle-inner')
-gsap.to(CircleInner, {
-  scrollTrigger: {
-    trigger: CircleInner,
-    start: "top top",
-    end: "bottom top",
-    markers: true,
-    scrub: .5,
-  },
-  scale: .2,
-  backgroundColor: "#133edbd0"
-})
+  let CircleInner = document.getElementById("index-circle-inner");
+  gsap.to(CircleInner, {
+    scrollTrigger: {
+      trigger: CircleInner,
+      start: "top 10%",
+      end: "bottom top",
+      scrub: 2,
+    },
+    scale: 1.2,
+    backgroundColor: "#133edbd0",
+  });
+};
+magmaIndexCircles();
+gsap.to(".image-track", {
+  xPercent: -100,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});

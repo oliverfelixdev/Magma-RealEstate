@@ -431,10 +431,10 @@ body {
 }
 
 #index-circle {
-  height: 30vw;
-  width: 30vw;
+  height: 14vw;
+  width: 14vw;
   position: absolute;
-  border: 1.5px solid var(--border-background);
+  border: 1px solid var(--border-background);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -446,15 +446,264 @@ body {
 }
 
 #index-circle-inner {
-  height: 17vw;
-  width: 17vw;
-  border: 1.5px solid var(--default-background);
+  height: 7vw;
+  width: 7vw;
+  border: .1px solid var(--default-background);
   border-radius: 50%;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#index-circle-inner span{
+  font-size: .5vw;
+  color: var(--primary-color);
 }
 
 #sec7 > canvas {
   max-height: 100vh;
   max-width: 100vw;
   position: relative;
+}
+
+#sec8{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.sec8-binding video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.sec8-binding{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+}
+
+.sec8-binding .s8-absolute-con{
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+#sec9{
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #093DCC;
+}
+
+.sec9-binding{
+  width: 100%;
+}
+
+.magma-section {
+  color: var(--primary-color);
+  padding: 80px 5vw;
+}
+
+.magma-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.magma-text {
+  flex-basis: 50%;
+}
+
+.magma-text h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--primary-color);
+}
+
+.magma-image {
+  flex-basis: 65%; 
+  display: flex;
+  justify-content: center;
+}
+
+.magma-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.magma-content {
+  max-width: 600px;
+  position: relative;
+  left: 44%;
+}
+
+.magma-content h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.magma-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+#sec10{
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.sec10-binding{
+  width: 100%;
+  height: 100%; 
+}
+
+.blog-section {
+  background-color: white;
+  padding: 80px 5vw;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.blog-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.blog-image {
+  flex-basis: 50%;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.blog-content {
+  flex-basis: 50%;
+  padding-left: 40px;
+}
+
+.blog-category {
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.blog-heading {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #0F0F17;
+  font-weight: 400;
+}
+
+#sec11{
+  height: 100vh;
+  width: 10vw;
+  position: relative;
+}
+
+.sec11-binding{
+  width: 100%;
+  height: 100%;
+}
+
+.featured-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8vw;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100vw;
+  background-color: #02268E;
+  color: var(--primary-color);
+  padding: 50px;
+}
+
+.featured-content {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.featured-content h2 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--primary-color);
+}
+
+.featured-content p {
+  width: 90%;
+  margin-top: 20px;
+  font-weight: 400;
+  color: #ffffffa6;
+}
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 15vh; /* Adjust based on how much space you'd like for the logos */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 4vw;
+  position: absolute;
+  width: 200%; /* Double the width to ensure smooth scrolling */
+  animation: scroll-logos 18s linear infinite; /* Infinite horizontal scroll */
+}
+
+.logo-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-right: 50px; /* Space between logos */
+}
+
+@keyframes scroll-logos {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
 }

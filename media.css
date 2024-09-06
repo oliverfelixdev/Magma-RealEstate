@@ -140,6 +140,39 @@
     line-height: 6vw;
     letter-spacing: -2px;
   }
+
+  .magma-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .magma-content{
+    margin: 0 auto;
+    position: unset;
+
+  }
+  
+  .magma-text, .magma-image {
+    flex-basis: 100%;
+  }
+
+  .magma-text h1 {
+    margin-bottom: 20px;
+  }
+
+  .blog-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .blog-image, .blog-content {
+    flex-basis: 100%;
+  }
 }
 @media only screen and (max-width: 425px) {
   .navbar {
@@ -447,5 +480,9 @@
     gap: 2vw;
     padding: 2vw;
     margin: 8vw 0 0 0vw;
+  }
+
+  .featured-section {
+    padding: 15px;
   }
 }
