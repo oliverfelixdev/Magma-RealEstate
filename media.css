@@ -146,13 +146,13 @@
     text-align: center;
   }
 
-  .magma-content{
+  .magma-content {
     margin: 0 auto;
     position: unset;
-
   }
-  
-  .magma-text, .magma-image {
+
+  .magma-text,
+  .magma-image {
     flex-basis: 100%;
   }
 
@@ -170,7 +170,8 @@
     margin-top: 20px;
   }
 
-  .blog-image, .blog-content {
+  .blog-image,
+  .blog-content {
     flex-basis: 100%;
   }
 }
@@ -252,6 +253,15 @@
     color: var(--secondary-color);
   }
 
+  .sec1-binding {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
   .hero-info-frame {
     width: 100%;
     position: absolute;
@@ -322,11 +332,40 @@
     padding: 2vw;
     margin: 8vw 0 0 0vw;
   }
+
+  .btn--ft {
+    padding: 1.8vw 6vw;
+    border-radius: 100px;
+    background-color: var(--secondary-background);
+    color: var(--primary-color);
+    font-size: 3.5lvw;
+  }
+
+  .footer-links {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vw;
+    flex-direction: column;
+  }
+
+  .footer-column-flex {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .navbar {
+    z-index: 3;
+  }
+  .sec1-binding {
+    z-index: 2;
+  }
 }
 @media only screen and (max-width: 320px) {
   .navbar {
     background-color: transparent;
-    z-index: 2;
+    z-index: 3;
     height: 15vh;
   }
 
@@ -408,7 +447,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
   }
 
   .hero-info-frame {

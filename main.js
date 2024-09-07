@@ -42,7 +42,7 @@ function toggleSidebar() {
 }
 toggleSidebar();
 
-/* function clutter1() {
+function clutter1() {
   let subH1Text = document.querySelectorAll(".clutter-title");
   subH1Text.forEach((elem) => {
     let clutter = "";
@@ -55,7 +55,7 @@ toggleSidebar();
   });
 
   gsap.to(".clutter-title span", {
-    color: "#ffffff",
+    color: "#fff",
     stagger: 0.155,
     scrollTrigger: {
       trigger: ".clutter-title",
@@ -66,7 +66,7 @@ toggleSidebar();
     },
   });
 }
-clutter1(); */
+// clutter1();
 
 function canvasFrame() {
   const canvas = document.querySelector("#sec3>canvas");
@@ -590,10 +590,14 @@ let magmaIndexCircles = () => {
     backgroundColor: "#133edbd0",
   });
 };
-magmaIndexCircles();
-gsap.to(".image-track", {
-  xPercent: -100,
-  ease: "none",
-  duration: 20,
-  repeat: -1,
-});
+
+function ImageTrackBt() {
+  magmaIndexCircles();
+  gsap.to(".image-track", {
+    xPercent: -100,
+    ease: "none",
+    duration: 20,
+    repeat: -1,
+  });
+}
+ImageTrackBt();
