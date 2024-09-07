@@ -12,11 +12,11 @@ This project is a clone of the Magma website, created for educational purposes t
 
 ## Shots
 
-### Home Page
-![Home Page](./shots/home.png)
+### Page 1
+![Home Page](./assets/shots/home.png)
 
-### Contact Page
-![Contact Page](./shots/contact.png)
+### Page 2
+![Contact Page](./assets/shots/about.png)
 
 ## Technologies Used
 This project utilizes a range of modern web development technologies:
